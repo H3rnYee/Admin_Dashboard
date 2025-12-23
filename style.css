@@ -1,0 +1,17 @@
+.split{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.dashboard{
+    background-color: aqua;
+}
+
+.main{
+    background-color: grey;
+}
+
+.head{
+    background-color: white;
+}
