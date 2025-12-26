@@ -6,12 +6,18 @@
 
 .dashboard{
     background-color: aqua;
+    min-height: 100vh;
 }
 
 .main{
     background-color: grey;
+    min-height: 100vh;
 }
 
 .head{
     background-color: white;
+    min-height: 10vh;
+}
+#header-text{
+    margin: 0;
 }
