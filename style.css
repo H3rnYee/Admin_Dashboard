@@ -12,9 +12,28 @@
 
 .dashboard{
     display: grid;
-    background-color: aqua;
-    height: 100vh;
+    grid-template-rows: 0.5fr 0.5fr 2fr;
+    background-color: #008CBA;
+
 }
+
+
+.buttons-set{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.button{
+    background-color: #008CBA;
+    border: none;
+    outline: none;
+}
+button:hover {
+  background-color: #005977; /* Blue */
+  transform: scale(1.05); 
+}
+
+
 
 .main{
     display: grid;
