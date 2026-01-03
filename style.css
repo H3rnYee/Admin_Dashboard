@@ -42,6 +42,7 @@ button:hover {
 
 .main{
     display: grid;
+    grid-template-rows: 0.5fr 2fr;
     background-color: grey;
     height: 100vh;
 }
@@ -49,7 +50,6 @@ button:hover {
 .head{
     display: grid;
     background-color: white;
-    height: 10vh;
 }
 #header-text{
     margin: 0;
