@@ -51,6 +51,19 @@ button:hover {
     display: grid;
     background-color: white;
 }
-#header-text{
-    margin: 0;
+
+.top{
+    display: flex;
+    flex-direction: row;
+}
+
+.top-bar-1{
+    display: flex;
+    
+    margin-right: 1rem;
+}
+
+
+.top-bar-2{
+    display: flex;
 }
