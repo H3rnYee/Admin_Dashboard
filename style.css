@@ -4,18 +4,25 @@
     box-sizing: border-box;
 }
 
-.split{
+html, body {
+    height: 100%;
+}
+
+
+.split {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
 }
 
 
-.dashboard{
+
+.dashboard {
     display: grid;
-    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-rows: auto 0.5fr auto;
     background-color: #008CBA;
-
 }
+
 #dashboard-title{
     font-size: 2em;
     text-align: center;
@@ -40,12 +47,13 @@ button:hover {
 
 
 
-.main{
+.main {
     display: grid;
-    grid-template-rows: 0.5fr 2fr;
+    grid-template-rows: auto 1fr;
     background-color: grey;
-    height: 100vh;
 }
+
+
 .head {
     background-color: white;
     padding: 10px 0;
@@ -135,4 +143,51 @@ button:hover {
     display: grid;
     background-color: rgb(246, 243, 243);
     grid-template-columns: 3fr 1fr;
+    min-height: 100%;
+}
+
+
+.Projects{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+.item {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    min-height: 200px;
+
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.08),
+        0 8px 16px rgba(0, 0, 0, 0.06);
+
+    position: relative;
+}
+.item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #f4b740;
+    border-radius: 12px 0 0 12px;
+}
+
+
+
+
+.right-board{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
